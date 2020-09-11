@@ -59,6 +59,8 @@ class Dog
     
     Dog.new(id: id, name: dog[1], breed: dog[2])
   end
+  
+  def self.find_or_create_by
       
   
   
