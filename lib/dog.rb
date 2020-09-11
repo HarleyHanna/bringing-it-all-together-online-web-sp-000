@@ -55,6 +55,8 @@ class Dog
       WHERE id = (?)
     SQL
     
+    dog = DB[:conn].execute(sql, [id]).flatten
+    
     
   end
       
