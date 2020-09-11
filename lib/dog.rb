@@ -28,6 +28,8 @@ class Dog
     DB[:conn].execute(sql)
   end
   
+  def new_from_db
+  
   def save
     sql = <<-SQL
       INSERT INTO dogs (name, breed)
