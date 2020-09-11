@@ -30,7 +30,8 @@ class Dog
   
   def new_from_db(row)
     dog = Dog.new(row[0], row[1], row[2])
-    
+    dog
+  end
   
   def save
     sql = <<-SQL
