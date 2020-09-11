@@ -57,9 +57,7 @@ class Dog
     
     dog = DB[:conn].execute(sql, [id]).flatten
     
-    Dog.new()
-    
-    
+    Dog.new(id: id, name: dog[1], breed: dog[2])
   end
       
   
