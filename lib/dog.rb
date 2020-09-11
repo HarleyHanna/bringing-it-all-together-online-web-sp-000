@@ -37,13 +37,14 @@ class Dog
     if self.id 
       self.update
     else
-    sql = <<-SQL
-      INSERT INTO dogs (name, breed)
-      VALUES (?, ?)
-    SQL
+      sql = <<-SQL
+        INSERT INTO dogs (name, breed)
+        VALUES (?, ?)
+      SQL
     
-    DB[:conn].execute(sql, self.name, self.breed)
-    self
+      DB[:conn].execute(sql, self.name, self.breed)
+      self
+    end
   end
   
   def self.create(hash)
