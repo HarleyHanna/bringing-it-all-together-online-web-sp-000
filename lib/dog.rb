@@ -80,7 +80,7 @@ class Dog
   def self.find_by_name(dog)
     sql = <<-SQL
     SELECT * FROM dogs
-    WHERE name = ?
+    WHERE name = (?)
   SQL
   
   name = dog[1]
