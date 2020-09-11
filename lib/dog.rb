@@ -42,6 +42,8 @@ class Dog
     DB[:conn].execute(sql, self.name, self.breed)
     self
   end
+  
+  def self.create(hash)
       
   
   
