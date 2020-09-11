@@ -81,6 +81,7 @@ class Dog
     sql = <<-SQL
     SELECT * FROM dogs
     WHERE name = (?)
+    LIMIT 1
   SQL
   
   name = dog[1]
